@@ -39,7 +39,7 @@ nav::before {
   position: absolute;
   width: 55%;
   height: 1px;
-  background-color: white;
+  background-color: var(--color-white);
   top: 50%;
   right: calc(100% - 30px);
   opacity: 25%;
@@ -83,6 +83,7 @@ li a {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: var(--color-white);
+  z-index: -1;
 }
 </style>
