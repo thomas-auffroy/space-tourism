@@ -30,7 +30,21 @@ nav {
   color: var(--color-white);
   background-color: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(15px);
+
+  position: relative;
 }
+
+nav::before {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 1px;
+  background-color: white;
+  top: 50%;
+  right: calc(100% - 30px);
+  opacity: 25%;
+}
+
 ul {
   display: flex;
   align-items: center;
