@@ -62,9 +62,21 @@ ul li {
 li span {
   font-weight: bold;
   margin-right: 10px;
+
+  position: absolute;
+  z-index: -1;
 }
 
-.active ::after {
+li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  padding-left: 30px;
+}
+
+.active::after {
   content: "";
   position: absolute;
   width: 100%;
