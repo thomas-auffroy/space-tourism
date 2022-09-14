@@ -1,21 +1,22 @@
 <script setup>
 import { RouterLink, useRoute } from "vue-router";
 
-const route = useRoute();
-console.log(route);
+const path = useRoute().path;
 </script>
 
 <template>
   <nav>
     <ul>
-      <li class="active">
+      <li :class="path === '/' ? 'active' : ''">
         <span>00</span><RouterLink to="/">Home</RouterLink>
       </li>
-      <li>
+      <li :class="path === '/destination' ? 'active' : ''">
         <span>01</span><RouterLink to="/destination">Destination</RouterLink>
       </li>
-      <li><span>02</span><RouterLink to="/crew">Crew</RouterLink></li>
-      <li>
+      <li :class="path === '/crew' ? 'active' : ''">
+        <span>02</span><RouterLink to="/crew">Crew</RouterLink>
+      </li>
+      <li :class="path === '/technology' ? 'active' : ''">
         <span>03</span><RouterLink to="/technology">Technology</RouterLink>
       </li>
     </ul>
@@ -35,7 +36,7 @@ ul {
   align-items: center;
   gap: 50px;
   height: 100%;
-  margin-left: 15%;
+  margin-left: 20%;
 }
 
 ul li {
