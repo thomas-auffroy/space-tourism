@@ -36,15 +36,26 @@ main {
   display: flex;
   justify-content: space-around;
 
-  margin-top: 500px;
+  margin-top: 250px;
 }
 
 .text {
   width: 450px;
+}
+
+.text :not(h1) {
+  color: var(--color-blue-white);
+}
+.text h1 {
   color: var(--color-white);
 }
 
+.text p {
+  word-spacing: 7px;
+}
+
 button {
+  align-self: flex-end;
   height: 275px;
   width: 275px;
 
