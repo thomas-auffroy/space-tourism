@@ -22,6 +22,8 @@ import DisplayDestination from "../components/DisplayDestination.vue";
 
 h5 {
   color: var(--color-white);
+  margin-top: 75px;
+  margin-left: 165px;
 }
 
 h5 span {
