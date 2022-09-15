@@ -7,6 +7,7 @@
 h1, h2, h3, h4, .subheading-1, button{
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
+  color: var(--color-white);
 }
 h1{
   font-size: 150px;
@@ -26,6 +27,7 @@ h4, button{
 
 h5, .subheading-2, nav, p{
   font-family: 'Barlow Condensed', sans-serif;
+  color: var(--color-white);
 }
 h5, .subheading-2, nav{
   text-transform: uppercase;
