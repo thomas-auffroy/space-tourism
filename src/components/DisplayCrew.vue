@@ -71,6 +71,16 @@ function getImageUrl(path) {
 <style scoped>
 main {
   display: flex;
+  margin-left: 165px;
+}
+
+.role {
+  opacity: 50%;
+}
+
+ul {
+  display: flex;
+  gap: 25px;
 }
 
 li {
@@ -79,6 +89,7 @@ li {
   border-radius: 50%;
   background-color: var(--color-white);
   opacity: 17%;
+  cursor: pointer;
 }
 
 li.active {
@@ -95,6 +106,8 @@ li.active {
 
 .content p {
   margin-bottom: 120px;
+  color: var(--color-blue-white);
+  max-width: 445px;
 }
 
 picture {
