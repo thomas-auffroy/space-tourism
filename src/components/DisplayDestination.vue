@@ -3,9 +3,10 @@ import { ref, watchEffect } from "vue";
 import * as property from "../assets/data.json";
 const destinations = property.destinations;
 
-const destinationPicked = ref(null);
+const destinationPicked = ref();
 const index = ref();
-localStorage.index
+
+localStorage.indexDestination
   ? (index.value = localStorage.indexDestination)
   : (index.value = 0); // Initialise la valeur du local storage
 
@@ -22,8 +23,8 @@ watchEffect(function () {
  * Initialise la valeur du premier item choisi
  */
 function initDestination() {
-  if (localStorage.index) {
-    destinationPicked.value = destinations[localStorage.index];
+  if (localStorage.indexDestination) {
+    destinationPicked.value = destinations[localStorage.indexDestination];
   } else {
     destinationPicked.value = destinations[0];
   }

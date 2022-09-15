@@ -5,7 +5,9 @@ const crews = property.crew;
 
 const crewPicked = ref(null);
 const index = ref();
-localStorage.index ? (index.value = localStorage.indexCrew) : (index.value = 0); // Initialise la valeur du local storage
+localStorage.indexCrew
+  ? (index.value = localStorage.indexCrew)
+  : (index.value = 0); // Initialise la valeur du local storage
 
 initCrew();
 
@@ -29,8 +31,8 @@ function chooseCrew(arg) {
  * Initialise la valeur du premier item choisi
  */
 function initCrew() {
-  if (localStorage.index) {
-    crewPicked.value = crews[localStorage.index];
+  if (localStorage.indexCrew) {
+    crewPicked.value = crews[localStorage.indexCrew];
   } else {
     crewPicked.value = crews[0];
   }
