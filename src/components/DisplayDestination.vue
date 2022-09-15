@@ -40,23 +40,20 @@ function getImageUrl(path) {
           {{ destination.name }}
         </li>
       </ul>
-      <h2>MOON</h2>
+      <h2>{{ destinationPicked.name }}</h2>
       <p class="description">
-        See our planet as you’ve never seen it before. A perfect relaxing trip
-        away to help regain perspective and come back refreshed. While you’re
-        there, take in some history by visiting the Luna 2 and Apollo 11 landing
-        sites.
+        {{ destinationPicked.description }}
       </p>
       <hr />
       <div class="info">
         <div>
           <p class="subheading-2">avg. distance</p>
-          <p class="subheading-1">384.000 km</p>
+          <p class="subheading-1">{{ destinationPicked.distance }}</p>
         </div>
 
-        <div>
+        <div class="travel">
           <p class="subheading-2">est. travel time</p>
-          <p class="subheading-1">3 days</p>
+          <p class="subheading-1">{{ destinationPicked.travel }}</p>
         </div>
       </div>
     </div>
@@ -110,6 +107,7 @@ li {
   cursor: pointer;
 }
 .description {
+  min-height: 128px;
   color: var(--color-blue-white);
 }
 hr {
@@ -120,8 +118,12 @@ hr {
   background-color: rgb(56, 59, 75);
 }
 .info {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+}
+.travel {
+  position: absolute;
+  left: 220px;
+  top: 0;
 }
 
 .subheading-2 {
