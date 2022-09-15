@@ -6,6 +6,11 @@ console.log(destinations);
 
 const destinationPicked = ref(null);
 destinationPicked.value = destinations[0];
+
+function chooseDestination(arg) {
+  const value = arg.target.attributes["data-index"].value;
+  destinationPicked.value = destinations[value];
+}
 </script>
 
 <template>
@@ -14,9 +19,11 @@ destinationPicked.value = destinations[0];
     <div class="content">
       <ul>
         <li
-          v-for="destination in destinations"
-          :key="destination.name"
+          v-for="(destination, index) in destinations"
+          :key="destination.index"
           :class="destinationPicked.name == destination.name ? 'active' : ''"
+          :data-index="index"
+          @click="chooseDestination"
         >
           {{ destination.name }}
         </li>
@@ -88,6 +95,7 @@ li {
   color: var(--color-blue-white);
   position: relative;
   margin-bottom: 12px;
+  cursor: pointer;
 }
 .description {
   color: var(--color-blue-white);
