@@ -92,6 +92,10 @@ li {
   cursor: pointer;
 }
 
+li:hover {
+  opacity: 50%;
+}
+
 li.active {
   opacity: 1;
 }
@@ -108,6 +112,7 @@ li.active {
   margin-bottom: 120px;
   color: var(--color-blue-white);
   max-width: 445px;
+  height: 130px;
 }
 
 picture {
