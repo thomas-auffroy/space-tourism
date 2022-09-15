@@ -1,19 +1,45 @@
 <script setup>
-import { ref } from "vue";
+import { ref, watchEffect } from "vue";
 import * as property from "../assets/data.json";
 const destinations = property.destinations;
-console.log(destinations);
 
 const destinationPicked = ref(null);
-destinationPicked.value = destinations[0];
+const index = ref();
+localStorage.index ? (index.value = localStorage.index) : (index.value = 0); // Initialise la valeur du local storage
 
-console.log(getImageUrl());
+initDestination();
 
-function chooseDestination(arg) {
-  const value = arg.target.attributes["data-index"].value;
-  destinationPicked.value = destinations[value];
+/**
+ * A chaque modification de la valeur de l'index, on modifie le local storage
+ */
+watchEffect(function () {
+  localStorage.setItem("index", index.value);
+});
+
+/**
+ * Initialise la valeur du premier item choisi
+ */
+function initDestination() {
+  if (localStorage.index) {
+    destinationPicked.value = destinations[localStorage.index];
+  } else {
+    destinationPicked.value = destinations[0];
+  }
 }
 
+/**
+ * Fonction trigger au clique d'un item de la liste <ul>
+ * @param {Object} arg
+ */
+function chooseDestination(arg) {
+  index.value = arg.target.attributes["data-index"].value;
+  destinationPicked.value = destinations[index.value];
+}
+
+/**
+ * Permet d'encoder l'URL des images
+ * @param {String} path
+ */
 function getImageUrl(path) {
   return new URL(path, import.meta.url).href;
 }
@@ -78,7 +104,7 @@ main {
   display: flex;
   justify-content: center;
   gap: 160px;
-  margin-top: 175px;
+  margin-top: 65px;
 }
 picture {
   height: fit-content;
