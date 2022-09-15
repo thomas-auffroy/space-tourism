@@ -5,7 +5,9 @@ const destinations = property.destinations;
 
 const destinationPicked = ref(null);
 const index = ref();
-localStorage.index ? (index.value = localStorage.index) : (index.value = 0); // Initialise la valeur du local storage
+localStorage.index
+  ? (index.value = localStorage.indexDestination)
+  : (index.value = 0); // Initialise la valeur du local storage
 
 initDestination();
 
@@ -13,7 +15,7 @@ initDestination();
  * A chaque modification de la valeur de l'index, on modifie le local storage
  */
 watchEffect(function () {
-  localStorage.setItem("index", index.value);
+  localStorage.setItem("indexDestination", index.value);
 });
 
 /**
