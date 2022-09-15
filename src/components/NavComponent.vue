@@ -46,6 +46,17 @@ ul li {
   height: 100%;
   position: relative;
 }
+li:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+  z-index: -1;
+  opacity: 50%;
+}
 li span {
   font-weight: bold;
   margin-right: 10px;
@@ -72,5 +83,6 @@ li a {
   left: 0;
   background-color: var(--color-white);
   z-index: -1;
+  opacity: 1 !important; /* Not to be overlapped by hover state */
 }
 </style>
