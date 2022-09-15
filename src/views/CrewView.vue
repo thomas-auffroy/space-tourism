@@ -16,7 +16,7 @@ import DisplayCrew from "../components/DisplayCrew.vue";
   height: 100vh;
   width: 100vw;
   position: absolute;
-  background: url("../assets/images/destination/background-destination-desktop.jpg")
+  background: url("../assets/images/crew/background-crew-desktop.jpg")
     center/cover no-repeat;
 }
 
