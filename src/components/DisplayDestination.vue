@@ -7,9 +7,15 @@ console.log(destinations);
 const destinationPicked = ref(null);
 destinationPicked.value = destinations[0];
 
+console.log(getImageUrl());
+
 function chooseDestination(arg) {
   const value = arg.target.attributes["data-index"].value;
   destinationPicked.value = destinations[value];
+}
+
+function getImageUrl(path) {
+  return new URL(path, import.meta.url).href;
 }
 </script>
 
@@ -17,10 +23,10 @@ function chooseDestination(arg) {
   <main>
     <picture>
       <source
-        srcset="../assets/images/destination/image-europa.webp"
+        :srcset="getImageUrl(destinationPicked.images.webp)"
         type="image/webp"
       />
-      <img src="../assets/images/destination/image-europa.png" alt="" />
+      <img :src="getImageUrl(destinationPicked.images.webp)" alt="" />
     </picture>
     <div class="content">
       <ul>
