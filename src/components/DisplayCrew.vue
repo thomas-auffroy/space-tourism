@@ -116,6 +116,9 @@ li.active {
 }
 
 picture {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
   height: fit-content;
 }
 </style>
