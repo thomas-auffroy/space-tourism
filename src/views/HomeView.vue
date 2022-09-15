@@ -59,5 +59,10 @@ button {
   text-align: center;
 
   background-color: var(--color-white);
+  color: var(--color-black);
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0 0 0 87px rgba(255, 255, 255, 0.1);
 }
 </style>
