@@ -50,10 +50,6 @@ main {
   color: var(--color-white);
 }
 
-.text p {
-  word-spacing: 7px;
-}
-
 button {
   align-self: flex-end;
   height: 275px;
