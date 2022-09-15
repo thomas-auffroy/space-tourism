@@ -15,7 +15,13 @@ function chooseDestination(arg) {
 
 <template>
   <main>
-    <img src="../assets/images/destination/image-europa.png" alt="" />
+    <picture>
+      <source
+        srcset="../assets/images/destination/image-europa.webp"
+        type="image/webp"
+      />
+      <img src="../assets/images/destination/image-europa.png" alt="" />
+    </picture>
     <div class="content">
       <ul>
         <li
@@ -71,7 +77,7 @@ main {
   gap: 160px;
   margin-top: 175px;
 }
-img {
+picture {
   height: fit-content;
   align-self: flex-end;
 }
