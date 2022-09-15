@@ -19,8 +19,23 @@ header {
 
   margin-top: 45px;
   margin-left: 55px;
+
+  position: relative;
 }
 
+header::before {
+  content: "";
+  position: absolute;
+  width: calc(45% - 160px);
+  height: 1px;
+
+  top: calc((100% - 4px) / 2);
+  left: calc(165px - 55px);
+
+  background-color: var(--color-white);
+  opacity: 25%;
+  z-index: 1;
+}
 .icon {
   margin: auto 0;
 }
