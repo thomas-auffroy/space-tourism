@@ -25,7 +25,7 @@ h4, button{
   font-size: 28px;
 }
 
-h5, .subheading-2, nav, p{
+h5, .subheading-2, nav{
   font-family: 'Barlow Condensed', sans-serif;
   color: var(--color-white);
 }
@@ -40,11 +40,13 @@ h5{
   font-size: 14px;
   letter-spacing: 2.35px;
 }
-nav{
+nav, p.like-nav{
   font-size: 16px;
   letter-spacing: 2.7px;
 }
 p{
+  font-family: 'Barlow', sans-serif;
   font-size: 18px;
   line-height: 32px;
+  color: var(--color-white);
 }
