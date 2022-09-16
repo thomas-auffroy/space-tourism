@@ -1,6 +1,15 @@
 @import "./reset.css";
 @import "./base.css";
 
+
 body{
-  height: 100vh;
+  min-height: 100vh;
+}
+
+/* tablet */
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  #app{
+    height: 1024px;
+    position: relative;
+  }
 }
