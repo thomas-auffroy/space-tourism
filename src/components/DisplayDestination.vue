@@ -55,7 +55,7 @@ function getImageUrl(path) {
         :srcset="getImageUrl(destinationPicked.images.webp)"
         type="image/webp"
       />
-      <img :src="getImageUrl(destinationPicked.images.webp)" alt="" />
+      <img :src="getImageUrl(destinationPicked.images.png)" alt="" />
     </picture>
     <div class="content">
       <ul>
