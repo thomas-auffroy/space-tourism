@@ -65,4 +65,24 @@ button {
 button:hover {
   box-shadow: 0 0 0 87px rgba(255, 255, 255, 0.1);
 }
+
+/* tablet */
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  .background {
+    height: 100%;
+    background: url("../assets/images/home/background-home-tablet.jpg")
+      center/cover no-repeat;
+  }
+  main {
+    flex-direction: column;
+    margin-top: 105px;
+    gap: 156px;
+
+    text-align: center;
+  }
+  .text,
+  button {
+    align-self: center;
+  }
+}
 </style>
