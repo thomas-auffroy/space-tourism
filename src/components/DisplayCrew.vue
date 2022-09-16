@@ -65,7 +65,7 @@ function getImageUrl(path) {
     </div>
     <picture>
       <source :srcset="getImageUrl(crewPicked.images.webp)" type="image/webp" />
-      <img :src="getImageUrl(crewPicked.images.webp)" alt="" />
+      <img :src="getImageUrl(crewPicked.images.png)" alt="" />
     </picture>
   </main>
 </template>
