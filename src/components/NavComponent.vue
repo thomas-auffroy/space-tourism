@@ -7,17 +7,35 @@ const path = useRoute().path;
 <template>
   <nav>
     <ul>
-      <li :class="path === '/' ? 'active' : ''">
-        <span>00</span><RouterLink to="/">Home</RouterLink>
+      <li
+        :class="path === '/' ? 'active' : ''"
+        tabindex="0"
+        @keyup.enter="$router.push({ name: 'home' })"
+      >
+        <span>00</span><RouterLink to="/" tabindex="-1">Home</RouterLink>
       </li>
-      <li :class="path === '/destination' ? 'active' : ''">
-        <span>01</span><RouterLink to="/destination">Destination</RouterLink>
+      <li
+        :class="path === '/destination' ? 'active' : ''"
+        tabindex="0"
+        @keyup.enter="$router.push({ name: 'destination' })"
+      >
+        <span>01</span
+        ><RouterLink to="/destination" tabindex="-1">Destination</RouterLink>
       </li>
-      <li :class="path === '/crew' ? 'active' : ''">
-        <span>02</span><RouterLink to="/crew">Crew</RouterLink>
+      <li
+        :class="path === '/crew' ? 'active' : ''"
+        tabindex="0"
+        @keyup.enter="$router.push({ name: 'crew' })"
+      >
+        <span>02</span><RouterLink to="/crew" tabindex="-1">Crew</RouterLink>
       </li>
-      <li :class="path === '/technology' ? 'active' : ''">
-        <span>03</span><RouterLink to="/technology">Technology</RouterLink>
+      <li
+        :class="path === '/technology' ? 'active' : ''"
+        tabindex="0"
+        @keyup.enter="$router.push({ name: 'technology' })"
+      >
+        <span>03</span
+        ><RouterLink to="/technology" tabindex="-1">Technology</RouterLink>
       </li>
     </ul>
   </nav>
@@ -46,7 +64,8 @@ ul li {
   height: 100%;
   position: relative;
 }
-li:hover::after {
+li:hover::after,
+li:focus::after {
   content: "";
   position: absolute;
   width: 100%;
