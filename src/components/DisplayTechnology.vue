@@ -103,6 +103,9 @@ li {
   border: 1px solid rgba(255, 255, 255, 0.25);
   cursor: pointer;
 }
+li:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
 
 h3 {
   margin-top: 11px;
