@@ -104,4 +104,24 @@ li a {
   z-index: -1;
   opacity: 1 !important; /* Not to be overlapped by hover state */
 }
+
+/* tablet */
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  ul {
+    margin-left: 50px;
+    gap: 37px;
+  }
+  li span {
+    display: none;
+  }
+  li {
+    font-family: "Barlow Condensed", sans-serif;
+    color: var(--color-white);
+    font-size: 14px;
+    letter-spacing: 2.35px;
+  }
+  li a {
+    padding-left: 0;
+  }
+}
 </style>

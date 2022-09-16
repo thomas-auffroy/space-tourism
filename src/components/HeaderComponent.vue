@@ -39,4 +39,16 @@ header::before {
 .icon {
   margin: auto 0;
 }
+
+/* tablet */
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  header::before {
+    content: none;
+  }
+
+  header {
+    margin-top: 0;
+    margin-left: 40px;
+  }
+}
 </style>
