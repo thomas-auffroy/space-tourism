@@ -13,10 +13,13 @@ import DisplayDestination from "../components/DisplayDestination.vue";
 
 <style scoped>
 .background {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  background: url("../assets/images/destination/background-destination-desktop.jpg")
-    center/cover no-repeat;
+  background-image: url("../assets/images/destination/background-destination-desktop.jpg");
+}
+
+/* tablet */
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  .background {
+    background-image: url("../assets/images/destination/background-destination-tablet.jpg");
+  }
 }
 </style>
