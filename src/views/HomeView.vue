@@ -7,7 +7,7 @@ import HeaderComponent from "../components/HeaderComponent.vue";
     <HeaderComponent />
     <main>
       <div class="text">
-        <h5>so, you want to travel to</h5>
+        <h5 class="no-css">so, you want to travel to</h5>
         <br />
         <h1>space</h1>
         <br />
