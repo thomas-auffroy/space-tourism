@@ -107,7 +107,7 @@ main {
   display: flex;
   justify-content: center;
   gap: 160px;
-  margin-top: 65px;
+  margin-top: 5%;
 }
 picture {
   height: fit-content;

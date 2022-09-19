@@ -22,7 +22,7 @@ import DisplayDestination from "../components/DisplayDestination.vue";
 
 h5 {
   color: var(--color-white);
-  margin-top: 75px;
+  margin-top: 4%;
   margin-left: 165px;
 }
 

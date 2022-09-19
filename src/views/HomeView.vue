@@ -36,7 +36,7 @@ main {
   display: flex;
   justify-content: space-around;
 
-  margin-top: 250px;
+  margin-top: 10%;
 }
 
 .text {

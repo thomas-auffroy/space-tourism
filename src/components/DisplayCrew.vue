@@ -73,7 +73,7 @@ function getImageUrl(path) {
 <style scoped>
 main {
   display: flex;
-  margin-left: 165px;
+  margin-left: 10%;
 }
 
 .role {
@@ -103,7 +103,7 @@ li.active {
 }
 
 .content {
-  margin-top: 155px;
+  margin-top: 5%;
 }
 .name {
   margin-top: 15px;
