@@ -19,16 +19,4 @@ import DisplayCrew from "../components/DisplayCrew.vue";
   background: url("../assets/images/crew/background-crew-desktop.jpg")
     center/cover no-repeat;
 }
-
-h5 {
-  color: var(--color-white);
-  margin-top: 4%;
-  margin-left: 165px;
-}
-
-h5 span {
-  font-weight: bold;
-  opacity: 25%;
-  margin-right: 10px;
-}
 </style>

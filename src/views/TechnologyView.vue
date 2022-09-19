@@ -19,16 +19,4 @@ import DisplayTechnology from "../components/DisplayTechnology.vue";
   background: url("../assets/images/technology/background-technology-desktop.jpg")
     center/cover no-repeat;
 }
-
-h5 {
-  color: var(--color-white);
-  margin-top: 4%;
-  margin-left: 165px;
-}
-
-h5 span {
-  font-weight: bold;
-  opacity: 25%;
-  margin-right: 10px;
-}
 </style>
