@@ -13,10 +13,6 @@ import DisplayTechnology from "../components/DisplayTechnology.vue";
 
 <style scoped>
 .background {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  background: url("../assets/images/technology/background-technology-desktop.jpg")
-    center/cover no-repeat;
+  background-image: url("../assets/images/technology/background-technology-desktop.jpg");
 }
 </style>
