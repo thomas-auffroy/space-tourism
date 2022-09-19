@@ -13,10 +13,6 @@ import DisplayCrew from "../components/DisplayCrew.vue";
 
 <style scoped>
 .background {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  background: url("../assets/images/crew/background-crew-desktop.jpg")
-    center/cover no-repeat;
+  background-image: url("../assets/images/crew/background-crew-desktop.jpg");
 }
 </style>

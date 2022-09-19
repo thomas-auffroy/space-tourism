@@ -25,11 +25,7 @@ import HeaderComponent from "../components/HeaderComponent.vue";
 
 <style scoped>
 .background {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  background: url("../assets/images/home/background-home-desktop.jpg")
-    center/cover no-repeat;
+  background-image: url("../assets/images/home/background-home-desktop.jpg");
 }
 
 main {
@@ -69,9 +65,7 @@ button:hover {
 /* tablet */
 @media only screen and (min-width: 760px) and (max-width: 1024px) {
   .background {
-    height: 100%;
-    background: url("../assets/images/home/background-home-tablet.jpg")
-      center/cover no-repeat;
+    background-image: url("../assets/images/home/background-home-tablet.jpg");
   }
   main {
     flex-direction: column;
