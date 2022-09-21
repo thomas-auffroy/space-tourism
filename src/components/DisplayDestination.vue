@@ -107,7 +107,7 @@ main {
   display: flex;
   justify-content: center;
   gap: 160px;
-  margin-top: 65px;
+  margin-top: 5%;
 }
 picture {
   height: fit-content;
@@ -147,12 +147,8 @@ hr {
   background-color: rgb(56, 59, 75);
 }
 .info {
-  position: relative;
-}
-.travel {
-  position: absolute;
-  left: 220px;
-  top: 0;
+  display: flex;
+  gap: 80px;
 }
 
 .subheading-2 {
@@ -161,5 +157,35 @@ hr {
 }
 .subheading-1 {
   color: var(--color-white);
+}
+
+/* tablet */
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    gap: 53px;
+
+    text-align: center;
+  }
+
+  .active::after {
+    height: 2px;
+  }
+
+  picture {
+    align-self: unset;
+    width: 300px;
+  }
+
+  ul {
+    justify-content: center;
+  }
+
+  .info {
+    justify-content: center;
+  }
 }
 </style>

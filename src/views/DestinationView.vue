@@ -13,22 +13,13 @@ import DisplayDestination from "../components/DisplayDestination.vue";
 
 <style scoped>
 .background {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  background: url("../assets/images/destination/background-destination-desktop.jpg")
-    center/cover no-repeat;
+  background-image: url("../assets/images/destination/background-destination-desktop.jpg");
 }
 
-h5 {
-  color: var(--color-white);
-  margin-top: 75px;
-  margin-left: 165px;
-}
-
-h5 span {
-  font-weight: bold;
-  opacity: 25%;
-  margin-right: 10px;
+/* tablet */
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  .background {
+    background-image: url("../assets/images/destination/background-destination-tablet.jpg");
+  }
 }
 </style>
