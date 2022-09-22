@@ -11,6 +11,7 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
+      props: { size: "tablet" },
     },
     {
       path: "/destination",
