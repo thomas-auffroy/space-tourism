@@ -4,15 +4,9 @@ import DisplayCrew from "../components/DisplayCrew.vue";
 </script>
 
 <template>
-  <div class="background">
-    <HeaderComponent />
-    <h5><span>02</span> meet your crew</h5>
-    <DisplayCrew />
-  </div>
+  <HeaderComponent />
+  <h5><span>02</span> meet your crew</h5>
+  <DisplayCrew />
 </template>
 
-<style scoped>
-.background {
-  background-image: url("../assets/images/crew/background-crew-desktop.jpg");
-}
-</style>
+<style scoped></style>
