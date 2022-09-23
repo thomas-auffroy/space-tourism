@@ -95,8 +95,10 @@ button:hover {
 @media only screen and (min-width: 760px) and (max-width: 1024px) {
   main {
     flex-direction: column;
-    margin-top: 105px;
     gap: 156px;
+
+    margin-top: 105px;
+    padding-bottom: 90px;
 
     text-align: center;
   }
