@@ -108,6 +108,7 @@ main {
   justify-content: center;
   gap: 160px;
   margin-top: 5%;
+  margin-bottom: 120px;
 }
 picture {
   height: fit-content;
@@ -164,9 +165,15 @@ hr {
   main {
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
     margin-top: 60px;
     padding-bottom: 60px;
+=======
+>>>>>>> 46f2f73d766433812e8af68f882ca1f8288199b7
     gap: 53px;
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding-bottom: 60px;
 
     text-align: center;
   }
@@ -186,6 +193,22 @@ hr {
 
   .info {
     justify-content: center;
+  }
+
+  .content {
+    width: 570px;
+  }
+
+  .description {
+    min-height: auto;
+  }
+
+  .info > div:first-of-type {
+    min-width: 160px;
+  }
+
+  .info > div:last-of-type {
+    min-width: 150px;
   }
 }
 </style>

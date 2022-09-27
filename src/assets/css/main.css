@@ -11,5 +11,16 @@ body{
   max-width: 1440px;
   margin: 0 auto;
   padding-top: 40px;
+<<<<<<< HEAD
   position: relative;
+=======
+}
+
+
+/* tablet */
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+
+
+
+>>>>>>> 46f2f73d766433812e8af68f882ca1f8288199b7
 }
