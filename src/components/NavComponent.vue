@@ -1,39 +1,21 @@
 <script setup>
-import { RouterLink, useRoute } from "vue-router";
-
-const path = useRoute().path;
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
   <nav>
     <ul>
-      <li
-        :class="path === '/' ? 'active' : ''"
-        tabindex="0"
-        @keyup.enter="$router.push({ name: 'home' })"
-      >
+      <li tabindex="0" @keyup.enter="$router.push({ name: 'home' })">
         <span>00</span><RouterLink to="/" tabindex="-1">Home</RouterLink>
       </li>
-      <li
-        :class="path === '/destination' ? 'active' : ''"
-        tabindex="0"
-        @keyup.enter="$router.push({ name: 'destination' })"
-      >
+      <li tabindex="0" @keyup.enter="$router.push({ name: 'destination' })">
         <span>01</span
         ><RouterLink to="/destination" tabindex="-1">Destination</RouterLink>
       </li>
-      <li
-        :class="path === '/crew' ? 'active' : ''"
-        tabindex="0"
-        @keyup.enter="$router.push({ name: 'crew' })"
-      >
+      <li tabindex="0" @keyup.enter="$router.push({ name: 'crew' })">
         <span>02</span><RouterLink to="/crew" tabindex="-1">Crew</RouterLink>
       </li>
-      <li
-        :class="path === '/technology' ? 'active' : ''"
-        tabindex="0"
-        @keyup.enter="$router.push({ name: 'technology' })"
-      >
+      <li tabindex="0" @keyup.enter="$router.push({ name: 'technology' })">
         <span>03</span
         ><RouterLink to="/technology" tabindex="-1">Technology</RouterLink>
       </li>
@@ -93,7 +75,7 @@ li a {
   padding-left: 30px;
 }
 
-.active::after {
+.router-link-exact-active::after {
   content: "";
   position: absolute;
   width: 100%;
