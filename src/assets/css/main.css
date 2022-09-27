@@ -3,13 +3,23 @@
 
 
 body{
-  min-height: 100vh;
   background-color: var(--color-black);
 }
 
 #app{
+  min-height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
   padding-top: 40px;
   position: relative;
+}
+
+/* Allow the background image to be well displayed */
+@media only screen and (min-width: 1440px) {
+  body{
+    position: relative;
+  }
+  #app{
+    position: static;
+  }
 }
