@@ -19,7 +19,7 @@ function onResize() {
 function getFormat() {
   if (window.innerWidth > 1024) {
     return "desktop";
-  } else if (window.innerWidth > 700) {
+  } else if (window.innerWidth > 760) {
     return "tablet";
   } else {
     return "mobile";
