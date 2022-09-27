@@ -39,7 +39,6 @@ function onPropsUpdate() {
 </script>
 
 <template>
-  <HeaderComponent />
   <h5><span>02</span> meet your crew</h5>
   <DisplayCrew />
 </template>

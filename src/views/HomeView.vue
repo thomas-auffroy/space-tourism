@@ -38,7 +38,6 @@ function onPropsUpdate() {
 </script>
 
 <template>
-  <HeaderComponent />
   <main>
     <div class="text">
       <h5 class="no-css">so, you want to travel to</h5>

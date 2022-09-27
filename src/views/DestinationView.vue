@@ -39,7 +39,6 @@ function onPropsUpdate() {
 </script>
 
 <template>
-  <HeaderComponent />
   <h5><span>01</span> pick your destination</h5>
   <DisplayDestination />
 </template>
