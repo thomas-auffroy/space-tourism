@@ -1,6 +1,6 @@
 <script setup>
 import { RouterView } from "vue-router";
-
+import HeaderComponent from "./components/HeaderComponent.vue";
 import { onMounted, onUnmounted, ref } from "vue";
 
 const windowProperties = ref({
@@ -34,6 +34,7 @@ function getFormat() {
 </script>
 
 <template>
+  <HeaderComponent />
   <RouterView :windowFormat="windowProperties.format" />
 </template>
 
