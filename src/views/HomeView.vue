@@ -1,38 +1,11 @@
 <script setup>
-import bgDesktop from "@/assets/images/home/background-home-desktop.jpg";
-import bgTablet from "@/assets/images/home/background-home-tablet.jpg";
-import bgMobile from "@/assets/images/home/background-home-mobile.jpg";
+import { onMounted } from "vue";
 
-import { onMounted, onUnmounted, onUpdated } from "vue";
-
-const props = defineProps({
-  windowFormat: {
-    type: String,
-    required: true,
-    default: "",
-  },
-});
+const emits = defineEmits(["section"]);
 
 onMounted(() => {
-  onPropsUpdate();
+  emits("section", "home");
 });
-
-onUpdated(() => {
-  onPropsUpdate();
-});
-
-onUnmounted(() => {
-  document.body.style.backgroundImage = "";
-});
-function onPropsUpdate() {
-  if (props.windowFormat === "desktop") {
-    document.body.style.backgroundImage = `url(${bgDesktop})`;
-  } else if (props.windowFormat === "tablet") {
-    document.body.style.backgroundImage = `url(${bgTablet})`;
-  } else if (props.windowFormat === "mobile") {
-    document.body.style.backgroundImage = `url(${bgMobile})`;
-  }
-}
 </script>
 
 <template>
