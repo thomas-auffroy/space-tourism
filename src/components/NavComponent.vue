@@ -87,6 +87,13 @@ li a {
   opacity: 1 !important; /* Not to be overlapped by hover state */
 }
 
+@media only screen and (max-width: 1230px) {
+  ul {
+    margin-left: 100px;
+    gap: 5%;
+  }
+}
+
 /* tablet */
 @media only screen and (min-width: 760px) and (max-width: 1024px) {
   ul {
