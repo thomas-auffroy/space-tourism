@@ -165,7 +165,7 @@ hr {
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
-    margin-bottom: 80px;
+    padding-bottom: 60px;
     gap: 53px;
 
     text-align: center;
