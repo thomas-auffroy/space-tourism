@@ -165,11 +165,6 @@ hr {
   main {
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
-    margin-top: 60px;
-    padding-bottom: 60px;
-=======
->>>>>>> 46f2f73d766433812e8af68f882ca1f8288199b7
     gap: 53px;
     margin-top: 60px;
     margin-bottom: 0;
