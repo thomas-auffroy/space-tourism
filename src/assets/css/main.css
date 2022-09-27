@@ -5,13 +5,6 @@
 body{
   min-height: 100vh;
   background-color: var(--color-black);
-  /* padding-top: 40px; */
-
-  
-  background-repeat: no-repeat;
-  background-clip: border-box;
-  background-size: cover;
-  background-position: center;
 }
 
 #app{
