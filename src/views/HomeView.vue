@@ -62,10 +62,11 @@ button:hover {
 }
 
 /* tablet */
-@media only screen and (min-width: 760px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   main {
     flex-direction: column;
     margin-top: 105px;
+    padding-bottom: 90px;
     gap: 156px;
 
     text-align: center;
