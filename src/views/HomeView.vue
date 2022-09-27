@@ -1,6 +1,4 @@
 <script setup>
-import HeaderComponent from "../components/HeaderComponent.vue";
-
 import bgDesktop from "@/assets/images/home/background-home-desktop.jpg";
 import bgTablet from "@/assets/images/home/background-home-tablet.jpg";
 import bgMobile from "@/assets/images/home/background-home-mobile.jpg";

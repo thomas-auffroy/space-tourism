@@ -1,5 +1,4 @@
 <script setup>
-import HeaderComponent from "../components/HeaderComponent.vue";
 import DisplayCrew from "../components/DisplayCrew.vue";
 
 import bgDesktop from "@/assets/images/crew/background-crew-desktop.jpg";

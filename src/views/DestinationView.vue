@@ -1,5 +1,4 @@
 <script setup>
-import HeaderComponent from "../components/HeaderComponent.vue";
 import DisplayDestination from "../components/DisplayDestination.vue";
 
 import bgDesktop from "@/assets/images/destination/background-destination-desktop.jpg";

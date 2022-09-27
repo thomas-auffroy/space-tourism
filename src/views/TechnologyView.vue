@@ -1,5 +1,4 @@
 <script setup>
-import HeaderComponent from "../components/HeaderComponent.vue";
 import DisplayTechnology from "../components/DisplayTechnology.vue";
 
 import bgDesktop from "@/assets/images/technology/background-technology-desktop.jpg";
