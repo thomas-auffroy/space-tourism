@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
 
-  margin-top: 45px;
+  /* margin-top: 45px; */
   margin-left: 55px;
 
   position: relative;
