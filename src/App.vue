@@ -3,12 +3,6 @@ import { RouterView } from "vue-router";
 import HeaderComponent from "./components/HeaderComponent.vue";
 import { onMounted, onUnmounted, ref } from "vue";
 
-const windowProperties = ref({
-  height: window.innerHeight,
-  width: window.innerWidth,
-  format: getFormat(),
-});
-
 onMounted(() => {
   window.addEventListener("resize", onResize);
 });
@@ -17,9 +11,9 @@ onUnmounted(() => {
 });
 
 function onResize() {
-  windowProperties.value.height = window.innerHeight;
-  windowProperties.value.width = window.innerWidth;
-  windowProperties.value.format = getFormat();
+  imageURL.value = `url(src/assets/images/${activeSection.value}/background-${
+    activeSection.value
+  }-${getFormat()}.jpg)`;
 }
 
 function getFormat() {
@@ -31,11 +25,20 @@ function getFormat() {
     return "mobile";
   }
 }
+
+function onSectionChange(sectionName) {
+  activeSection.value = sectionName;
+  imageURL.value = `url(src/assets/images/${sectionName}/background-${sectionName}-${getFormat()}.jpg)`;
+}
+
+const imageURL = ref("");
+const activeSection = ref("");
 </script>
 
 <template>
+  <div id="full-width-background"></div>
   <HeaderComponent />
-  <RouterView :windowFormat="windowProperties.format" />
+  <RouterView @section="onSectionChange" />
 </template>
 
 <style>
@@ -56,5 +59,24 @@ h5:not(.no-css) span {
     margin-left: 40px;
     margin-top: 40px;
   }
+}
+</style>
+
+<style scoped>
+#full-width-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+  background-position: center;
+
+  background-image: v-bind(imageURL);
 }
 </style>
