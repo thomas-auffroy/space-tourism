@@ -45,7 +45,6 @@ header::before {
 
 .icon img {
   animation: infinite rotate 5s linear paused;
-  cursor: pointer;
 }
 
 @keyframes rotate {
