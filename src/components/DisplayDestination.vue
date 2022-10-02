@@ -75,7 +75,7 @@ function getImageUrl(path) {
       </p>
       <hr />
       <div class="info">
-        <div>
+        <div class="distance">
           <p class="subheading-2">avg. distance</p>
           <p class="subheading-1">{{ destinationPicked.distance }}</p>
         </div>
@@ -150,6 +150,10 @@ hr {
 .info {
   display: flex;
   gap: 80px;
+}
+
+.distance {
+  min-width: 160px;
 }
 
 .subheading-2 {
