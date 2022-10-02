@@ -71,11 +71,10 @@ function getImageUrl(path) {
 </template>
 
 <style scoped>
-main {
-  display: flex;
+.content {
+  margin-top: 5%;
   margin-left: 10%;
 }
-
 .role {
   opacity: 50%;
 }
@@ -83,6 +82,8 @@ main {
 ul {
   display: flex;
   gap: 25px;
+
+  margin-top: 120px;
 }
 
 li {
@@ -102,16 +103,12 @@ li.active {
   opacity: 1;
 }
 
-.content {
-  margin-top: 5%;
-}
 .name {
   margin-top: 15px;
   margin-bottom: 25px;
 }
 
 .content p {
-  margin-bottom: 120px;
   color: var(--color-blue-white);
   max-width: 445px;
   height: 130px;
@@ -122,5 +119,46 @@ picture {
   bottom: 0;
   left: 50%;
   height: fit-content;
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  .content p {
+    text-align: center;
+    max-width: 592px;
+    height: auto;
+  }
+
+  .name {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    margin: 40px 0;
+    gap: 16px;
+  }
+
+  li {
+    width: 10px;
+    height: 10px;
+  }
+  picture {
+    position: revert;
+    display: flex;
+    justify-content: center;
+  }
+
+  picture > * {
+    max-height: 487px;
+  }
 }
 </style>
