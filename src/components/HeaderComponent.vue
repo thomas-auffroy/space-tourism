@@ -39,6 +39,24 @@ header::before {
   margin: auto 0;
 }
 
+.icon img:hover {
+  animation-play-state: running;
+}
+
+.icon img {
+  animation: infinite rotate 5s linear paused;
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* tablet */
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
   header::before {
