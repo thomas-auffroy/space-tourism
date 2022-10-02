@@ -14,5 +14,3 @@ onMounted(() => {
   <h5><span>03</span> space launch 101</h5>
   <DisplayTechnology />
 </template>
-
-<style scoped></style>
